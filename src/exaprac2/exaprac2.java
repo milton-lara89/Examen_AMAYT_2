@@ -37,7 +37,7 @@ public class exaprac2 {
                 mayor=subtotal[i];
                 empmay=nombre[i];
             }
-            detalle += "Empleado: " + nombre[i] + " Horas Trabajadas: " + horas[i] + " Salario X Hora: $ " + salario[i] + "Salario Total: $ " + subtotal[i] + "\n";
+            detalle += "Empleado: " + nombre[i] + " Horas Trabajadas: " + horas[i] + " Salario X Hora: $ " + salario[i] + " Salario Total: $ " + subtotal[i] + "\n";
         }   
         JOptionPane.showMessageDialog(null, detalle + "\n El total de la planilla es: $ " + total + "\n" + "El empleado con mayor salario es: " + empmay);
     }
