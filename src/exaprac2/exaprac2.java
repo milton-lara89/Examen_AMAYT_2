@@ -29,16 +29,16 @@ public class exaprac2 {
         for(int i=0; i<Cant; i++){
             nombre[i]=JOptionPane.showInputDialog("Nombre del empleado " + (i+1)); 
             horas[i]=Integer.parseInt(JOptionPane.showInputDialog("Horas Trabajadas: "));
-            salario[i]=Double.parseDouble(JOptionPane.showInputDialog("Salario X Hora: "));
-            total += horas[i] * salario[i];  
-            detalle += "Empleado: " + nombre[i] + " Horas: " + horas[i] + " Salario: $ " + salario[i] + "\n";  
-        
+            salario[i]=Double.parseDouble(JOptionPane.showInputDialog("Salario X Hora: "));         
             subtotal[i] = horas[i] * salario[i];
+            total += horas[i] * salario[i];
             
             if(subtotal[i]>mayor){
                 mayor=subtotal[i];
                 empmay=nombre[i];
             }
+            
+            detalle += "Empleado: " + nombre[i] + " Horas Trabajadas: " + horas[i] + " Salario X Hora: $ " + salario[i] + "Salario Total: $ " + subtotal[i] + "\n";
         }   
         JOptionPane.showMessageDialog(null, detalle + "\n El total de la planilla es: $ " + total + "\n" + "El empleado con mayor salario es: " + empmay);
     }
